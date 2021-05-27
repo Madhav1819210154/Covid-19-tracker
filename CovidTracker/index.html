@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		#map{
+			width:100vw;
+			height: 100vh;
+		}
+	</style>
+	<title>Madhav Covid Tracker</title>
+</head>
+<body>
+<div id='map'></div>
+</body>
+
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoibWFkaGF2MTU0IiwiYSI6ImNrcDZqaXd4ZzA1MWsydm10eTNtcWJ2dGgifQ._j6IoZNQIzI1X4cY11wjtQ';
+  var map = new mapboxgl.Map({
+    container: 'map',
+    style: 'mapbox://styles/mapbox/dark-v10',
+    zoom:1,
+    center:[0,40]
+  });
+</script>
+
+<script type="text/javascript" src="index.js"></script>
+</html>
